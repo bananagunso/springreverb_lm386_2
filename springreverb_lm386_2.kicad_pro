@@ -677,13 +677,13 @@
         "uuid": "db334565-2b42-4a43-9204-0bb0e555e376"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J4,#PWR1-5,C7",
     "variants": []
   },
   "sheets": [
     [
       "db334565-2b42-4a43-9204-0bb0e555e376",
-      "springreverb_lm386"
+      "springreverb_lm386_2"
     ]
   ],
   "text_variables": {},
