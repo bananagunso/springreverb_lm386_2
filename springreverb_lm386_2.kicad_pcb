@@ -89,7 +89,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -473,11 +472,12 @@
 				)
 			)
 		)
-		(pad "" np_thru_hole circle
+		(pad "" thru_hole circle
 			(at 0 0 90)
 			(size 3.2 3.2)
 			(drill 0.5)
 			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
 			(uuid "835155c5-23a0-4d69-a5a8-62958b45c1ee")
 		)
 		(embedded_fonts no)
@@ -2563,11 +2563,12 @@
 				)
 			)
 		)
-		(pad "" np_thru_hole circle
+		(pad "" thru_hole circle
 			(at 0 0 90)
 			(size 3.2 3.2)
 			(drill 0.5)
 			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
 			(uuid "80d99542-a3dc-4cee-8fef-c3a44d1db292")
 		)
 		(embedded_fonts no)
@@ -3032,11 +3033,12 @@
 				)
 			)
 		)
-		(pad "" np_thru_hole circle
+		(pad "" thru_hole circle
 			(at 0 0 90)
 			(size 3.2 3.2)
 			(drill 0.5)
 			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
 			(uuid "5042d03a-44dc-4312-8542-627d9d60fd3e")
 		)
 		(embedded_fonts no)
@@ -9354,11 +9356,12 @@
 				)
 			)
 		)
-		(pad "" np_thru_hole circle
+		(pad "" thru_hole circle
 			(at 0 0 90)
 			(size 3.2 3.2)
 			(drill 0.5)
 			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
 			(uuid "6d601a79-67a8-46da-9e63-fcac98edf6bc")
 		)
 		(embedded_fonts no)
@@ -14751,6 +14754,40 @@
 		(uuid "76fecec5-aadb-49ef-b428-2b88d460d44a")
 	)
 	(zone
+		(net "Net-(U1B--)")
+		(layer "B.Cu")
+		(hatch none 0.1)
+		(priority 30001)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(fill yes
+			(island_removal_mode 1)
+		)
+		(polygon
+			(pts
+				(xy 98.65381 100.574641) (xy 99.502338 99.726113) (xy 98.016393 98.54099) (xy 97.663154 98.735457)
+				(xy 97.751578 100.238095)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 98.02249 98.545853) (xy 98.805928 99.170688) (xy 99.492102 99.71795) (xy 99.496433 99.725788)
+				(xy 99.493954 99.734392) (xy 99.49308 99.73537) (xy 98.659126 100.569324) (xy 98.650853 100.572751)
+				(xy 98.646765 100.572013) (xy 98.317044 100.449022) (xy 97.758721 100.240759) (xy 97.752167 100.234657)
+				(xy 97.75113 100.230484) (xy 97.663587 98.742827) (xy 97.666522 98.73437) (xy 97.669619 98.731897)
+				(xy 98.009558 98.544752) (xy 98.018457 98.543765)
+			)
+		)
+	)
+	(zone
 		(net "GND1")
 		(layer "B.Cu")
 		(uuid "3ec130bb-72dc-4125-b90e-aeccb788847b")
@@ -16111,40 +16148,6 @@
 				(xy 84.634474 78.832174) (xy 84.638949 78.829186) (xy 84.993184 78.603513) (xy 84.997779 78.600723)
 				(xy 85.002445 78.598029) (xy 85.007147 78.595449) (xy 85.285191 78.450708) (xy 85.312969 78.440254)
 				(xy 85.341188 78.43335) (xy 85.370655 78.429798) (xy 115.370398 78.429798)
-			)
-		)
-	)
-	(zone
-		(net "Net-(U1B--)")
-		(layer "B.Cu")
-		(hatch none 0.1)
-		(priority 30001)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 98.65381 100.574641) (xy 99.502338 99.726113) (xy 98.016393 98.54099) (xy 97.663154 98.735457)
-				(xy 97.751578 100.238095)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(pts
-				(xy 98.02249 98.545853) (xy 98.805928 99.170688) (xy 99.492102 99.71795) (xy 99.496433 99.725788)
-				(xy 99.493954 99.734392) (xy 99.49308 99.73537) (xy 98.659126 100.569324) (xy 98.650853 100.572751)
-				(xy 98.646765 100.572013) (xy 98.317044 100.449022) (xy 97.758721 100.240759) (xy 97.752167 100.234657)
-				(xy 97.75113 100.230484) (xy 97.663587 98.742827) (xy 97.666522 98.73437) (xy 97.669619 98.731897)
-				(xy 98.009558 98.544752) (xy 98.018457 98.543765)
 			)
 		)
 	)
