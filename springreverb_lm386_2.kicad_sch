@@ -5753,7 +5753,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470p"
+		(property "Value" "820p"
 			(at 205.994 147.574 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6557,7 +6557,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "470p"
+		(property "Value" "820p"
 			(at 89.408 146.812 90)
 			(show_name no)
 			(do_not_autoplace no)
